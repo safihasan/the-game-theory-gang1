@@ -10,4 +10,16 @@
 
 - Story: As a site owner, I want the game to have an engaging and intuitive interface, so that users find it enjoyable and easy to play.
 
-- Story: As a user I want a scoreboard so that I can track my wins and losses.
+- Story: As a user I want feedback on how I did so I know whether the game was a win, loss or a draw.
+
+- Story: As a user I want to be able to quickly navigate back to the main page if I want to play again.
+
+## Languages, Frameworks and Libraries
+
+- HTML5
+- CSS
+- JavaScript
+- Github
+- Slack
+- Gitpod
+- Balsamiq
