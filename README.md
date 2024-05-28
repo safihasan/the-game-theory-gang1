@@ -21,7 +21,7 @@ Rock-Paper-Scissors-Lizard-Spock is an entertaining game of chance that offers a
 
 # Wireframes
 
-<img src="assets/Wireframes/New Wireframe 1_1.png>
+
 
 # Languages, Frameworks and Libraries
 
