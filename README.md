@@ -21,7 +21,15 @@ Rock-Paper-Scissors-Lizard-Spock is an entertaining game of chance that offers a
 
 # Wireframes
 
-<img src="assets/Wireframes/New Wireframe 1_1.png>
+We used Balsamiq to craft wireframes, capturing the visual essence of our game. The following images illustrate the progression of our design:
+
+![](/assets/Wireframes/New%20Wireframe%201_1.png)
+
+![](/assets/Wireframes/New%20Wireframe%202_1.png)
+
+![](/assets/Wireframes/Screenshot%202024-05-28%20111038.png)
+
+![](/assets/Wireframes/Screenshot%202024-05-28%20111627.png)
 
 # Languages, Frameworks and Libraries
 
@@ -60,6 +68,14 @@ After each game, the player will receive comprehensive feedback that includes th
 After each round, the player is presented with the 'play again' button. This button allows players to carry on playing the game.
 
 # Testing
+
+- Validation:
+
+- Performance testing:
+
+- Browser compatibility:
+
+- Responisveness:
 
 # Bugs
 
