@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Theory-game</Theory-game></title>
 </head>
+
 <body>
     <div class=container>
         <div class="heading-section">
@@ -23,22 +25,28 @@
                     </button>
                 </div>
             </div>
-            <!--testing this code-->
-            <section id="arena-area">
-                <div id="pannel" class="main-box pannel-border-color"> <!-- information pannel -->
-                    <div id="score" class="main-box"> <!-- players names, scores, round number-->
-                        <div id="round" class="round-info">Round - <span id="round-number">0</span></div>
-                        <!-- round number-->
-                        <div id="player-info" class="player-info"> <!-- Player information (name, score) -->
-                            <span id="player-name">Player Score</span>
-                            <div id="player-score" class="score-box player-colors">0</div>
-                        </div>
-                        <div id="computer-info" class="player-info"> <!-- Computer information (name, score) -->
-                            <span id="computer-name">Computer Score</span>
-                            <div id="computer-score" class="score-box computer-colors">0</div>
-                        </div>
+        </div>
+        <!--testing this code-->
+        <section id="arena-area">
+            <div id="pannel" class="main-box pannel-border-color"> <!-- information pannel -->
+                <div id="score" class="main-box"> <!-- players names, scores, round number-->
+                    <div id="player-info" class="player-info"> <!-- Player information (name, score) -->
+                        <span id="player-name">Player Score</span>
+                        <div id="player-score" class="score-box player-colors">0</div>
+                    </div>
+                    <div id="computer-info" class="player-info"> <!-- Computer information (name, score) -->
+                        <span id="computer-name">Computer Score</span>
+                        <div id="computer-score" class="score-box computer-colors">0</div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <div class="player-choice">
+            <button type="button" class="btn-hand rock"><img src="assets/gallery/rock.jpeg" alt="rock hand"></button>
+            <button type="button" class="btn-hand paper"><img src="assets/gallery/paper.png" alt="paper"></button>
+            <button type="button" class="btn-hand scissors"><img src="assets/gallery/scissors.jpeg" alt="scissors"></button>
+            <button type="button" class="btn-hand lizard"><img src="assets/gallery/lizard.jpeg" alt="lizard"></button>
+            <button type="button" class="btn-hand spock"><img src="assets/gallery/spock.jpeg" alt="spock">  </button>
         </div>
     </div>
     <script src="assets/js/script.js"></script>
@@ -55,4 +63,5 @@
         integrity=“sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy”
         crossorigin=“anonymous”></script>
 </body>
+
 </html>
