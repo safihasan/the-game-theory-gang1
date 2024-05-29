@@ -18,18 +18,19 @@ Rock-Paper-Scissors-Lizard-Spock is an entertaining game of chance that offers a
 - Story: As a user I want feedback on how I did so I know whether the game was a win, loss or a draw.
 
 - Story: As a user I want to be able to quickly navigate back to the main page if I want to play again.
+#
 
 # Wireframes
 
 We used Balsamiq to craft wireframes, capturing the visual essence of our game. The following images illustrate the progression of our design:
 
-![](/assets/Wireframes/New%20Wireframe%201_1.png)
+![](/assets/Wireframes/firstview-basic-wireframe.png)
 
-![](/assets/Wireframes/New%20Wireframe%202_1.png)
+![](/assets/Wireframes/secondview-basic%20wireframe.png)
 
-![](/assets/Wireframes/Screenshot%202024-05-28%20111038.png)
+![](/assets/Wireframes/firstview-fullwireframe.png)
 
-![](/assets/Wireframes/Screenshot%202024-05-28%20111627.png)
+![](/assets/Wireframes/second-fullwireframe.png)
 
 # Languages, Frameworks and Libraries
 
@@ -44,11 +45,14 @@ We used Balsamiq to craft wireframes, capturing the visual essence of our game. 
 
 # Game features
 
-### The title
+### 
 The game title is the name of the game. It is displayed at the top of the user interface so that players know what the game is called.
 
 ### Rules
-The game has a button called Rules that if clicked tells the user the rules of the game.
+The game has a button called Rules that if clicked tells the user the rules of the game. It also includes a model that pops up and has the following image.
+![](/assets/gallery/rock-paper-scissors-2072981.jpeg). Voice of sheldon is also heard on clicking the Rules button. <audio controls><source src="assets/sounds/rock-paper-scissors-lizard-spock-game-rules-rock-paper-scissors-lizard-spock-sheldon-big-bang-theory-101soundboards.mp3" type="audio/mpeg"> </audio>
+
+
 
 ### Score tracking
 The game has a score tracking feature that counts the wins of each player. It shows a count of the number of games won by the player and the computer.
@@ -70,6 +74,8 @@ After each round, the player is presented with the 'play again' button. This but
 # Testing
 
 - Validation:
+https://validator.w3.org/  - One warning only, for missing heading.
+https://jigsaw.w3.org/css-validator/   -Congratulations, no errors found.
 
 - Performance testing:
 
@@ -78,7 +84,16 @@ After each round, the player is presented with the 'play again' button. This but
 - Responisveness:
 
 # Bugs
+The bugs encountered while making this game, included.
+*html positioning for UX.
+
 
 # Deployment
+The site was deployed to GitHub pages on 28th May 2024. The steps to deploy are as follows: In the GitHub repository, navigate to the Settings tab From the source section drop-down menu, select the Master Branch Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. The live link can be found here https://safihasan.github.io/the-game-theory-gang1/
 
 # Credits
+https://github.com/Juanma1313/spock-game/blob/main/README.md#credits
+
+https://www.youtube.com/results?search_query=rock+paper+scissors+spok+lizardgame+css+html+javascript+with+2+player+scores+
+
+https://www.w3schools.com/#gsc.tab=0&gsc.q=add%20sound%20
