@@ -1,5 +1,3 @@
-
-
 function game() {
     const actions = ["rock", "paper", "scissors", "lizard", "spock"];
     const playerWinResults = ["scissorspaper", 'paperrock', 'rocklizard', 'lizardspock', 'spockscissors',
@@ -13,8 +11,12 @@ function game() {
     const pcPickElement = document.querySelector(".pc-picked");
     const resultElement = document.querySelector(".result");
     const resultTitleElement = resultElement.querySelector(".title");
-    
-   /* let currentScore = null;*/
+    const PlayerScoreDisplay = document.getElementById("player-score");
+    const computerScoreDisplay = document.getElementById("computer-score");
+    let playerScore = 0;
+    let computerScore = 0;
+
+    let currentScore = null;
 
     window.addEventListener('load', () => {
        
@@ -58,18 +60,23 @@ function game() {
     function getCompChoice() {
         return actions[Math.floor(Math.random() * 5)];
     }
+
     function calculateWinner(player, comp) {
         if (player === comp) {
             resultTitleElement.innerText = `Tie`;
         } else if (getPlayerWinsStatus(player + comp)) {
             resultTitleElement.innerText = `You Lose!`;
            
-
+           computerScore++;
+           computerScoreDisplay.textContent = computerScore;
         } else {
             resultTitleElement.innerText = `You Win!` ;
             
+            playerScore++;
+            PlayerScoreDisplay.textContent = playerScore;
         }
     }
+
     function getPlayerWinsStatus(result) {
         return playerWinResults.some(winStr => winStr === result); l
     }
