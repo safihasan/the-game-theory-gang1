@@ -24,6 +24,8 @@ h1 {
     font-size: 70px;
     text-align: center;
     padding-top: 20px;
+    text-shadow: 3px 3px 5px #589595;
+    margin-bottom: 50px;
 }
 
 #player-info{
@@ -91,13 +93,22 @@ bottom:0;
 .hidden{
     display:none ;
 }
+.title{
+margin-top: 40px;
 
+}
+.pc-picked,
+.user-picked{
+  text-align: center;
+  margin-top: 50px;
+}
 .play-again{
     background-color:#F2BB05 ;
 font-size: 40px;
 border-radius: 15px;
 cursor: pointer;
 border-color: black;
+margin-top: 40px;
 
 }
 .play-again-button{
@@ -112,4 +123,5 @@ p{
     text-align: center;
     font-size: 30px;
     font-weight: 500;
+    margin-top: 40px;
 }
