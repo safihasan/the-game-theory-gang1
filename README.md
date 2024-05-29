@@ -192,23 +192,30 @@ We used Balsamiq to craft wireframes, capturing the visual essence of our game. 
 - <img src="./assets/icons/balsamiq.png" width="20px" align="top"><a href="https://balsamiq.com/"> Balsamiq</a> - Used to create site wireframes.
 - <img src="./assets/icons/bootstrap-4.svg" width="20px" align="top"><a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"> Bootstrap </a> - Used for developing a pleasing front end.
 
+
 # Game features
 
-### 
-The game title is the name of the game. It is displayed at the top of the user interface so that players know what the game is called.
+### Game title
+
+The game title is prominently displayed at the top of the user interface, ensuring that players always know the name of the game. Styled attractively in an eye-catching shade of orange, the title harmonizes with the overall color scheme of the game, enhancing the visual appeal and maintaining consistency throughout the interface.
+
+![](/assets/features/game_title.PNG)
 
 ### Rules
-The game has a button called Rules that if clicked tells the user the rules of the game. It also includes a model that pops up and has the following image.
+
+The game includes a "Rules" button that, when clicked, provides users with a comprehensive guide to the game rules. Upon clicking, a modal pops up displaying the following image:
 
 ![](/assets/gallery/rock-paper-scissors-2072981.jpeg).  
 
+Additionally, the voice of Sheldon is heard, offering an auditory explanation of the rules. This combination of visual and auditory guidance ensures that players have a clear understanding of how to play the game.
+
 <audio controls><source src="assets/sounds/rock-paper-scissors-lizard-spock-game-rules-rock-paper-scissors-lizard-spock-sheldon-big-bang-theory-101soundboards.mp3" type="audio/mpeg"> </audio>
 
-Voice of sheldon is also heard on clicking the Rules button.
-
-
 ### Score tracking
-The game has a score tracking feature that counts the wins of each player. It shows a count of the number of games won by the player and the computer.
+
+The game includes a score tracking feature that counts and displays the number of wins for each player. After each round, the player's score is shown on the left side of the UI, while the computer opponent's score appears on the right side. This clear and straightforward layout allows players to easily keep track of the number of games won by both themselves and the computer.
+
+![](/assets/features/Scores.PNG)
 
 ### Feedback
 The game contains a features that gives the player feedback after each game. It tells the user which option they picked, the option picked by the computer and which participant won the round.
@@ -217,12 +224,16 @@ After each game, the player will receive comprehensive feedback that includes th
 
 1. Player's Choice: Clearly state the option the player selected.
 2. Computer's Choice: Clearly state the option the computer selected.
-3. Round Outcome: Announce the winner of the round.
-4. Round Summary: Provide a brief explanation of why the player or computer won, based on the rules of the game.
-5. Score Update: Display the current score, showing the number of rounds won by the player and the computer.
+3. Round Outcome: Inform the player whether they won or lost the round.
+
+![](/assets/features/Feedback.PNG)
 
 ### Play again
-After each round, the player is presented with the 'play again' button. This button allows players to carry on playing the game.
+
+After each round, the player is presented with a "Play Again" button, allowing them to continue playing the game seamlessly. This button is styled to match the game's theme, ensuring a cohesive look and feel. Upon clicking the button, the user is taken back to the main game interface to start a new round.
+
+![](/assets/features/Play_again.PNG)
+
 
 # Testing
 
