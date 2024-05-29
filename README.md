@@ -48,7 +48,7 @@ We used Balsamiq to craft wireframes, capturing the visual essence of our game. 
 The game title is the name of the game. It is displayed at the top of the user interface so that players know what the game is called.
 
 ### Rules
-The game has a button called that if clicked tells the user the rules of the game.
+The game has a button called Rules that if clicked tells the user the rules of the game.
 
 ### Score tracking
 The game has a score tracking feature that counts the wins of each player. It shows a count of the number of games won by the player and the computer.
