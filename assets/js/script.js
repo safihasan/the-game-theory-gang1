@@ -7,16 +7,17 @@ function game() {
     let playerChoice = " ";
     let compChoice = " ";
     const playChoiceElement = document.querySelector(".player-choice");
+    const mainScoreArea = document.querySelector(".main-box");
     const pickedElement = document.querySelector(".section-picked");
     const playerPickElement = document.querySelector(".user-picked");
     const pcPickElement = document.querySelector(".pc-picked");
     const resultElement = document.querySelector(".result");
     const resultTitleElement = resultElement.querySelector(".title");
     
-    let currentScore = null;
+   /* let currentScore = null;*/
 
     window.addEventListener('load', () => {
-       /* retrieveScoreFromLocalStorage();*/
+       
 
         document.querySelectorAll(".player-choice .btn-hand").forEach(hand => {
 
@@ -38,6 +39,7 @@ function game() {
     function startGame() {
         calculateWinner(playerChoice, compChoice);
         playChoiceElement.classList.add("hidden");
+        mainScoreArea.classList.add("hidden");
         pickedElement.classList.remove("hidden");
         clearResultBeforeAppend();
         buildChoiceElement(true, playerChoice);
@@ -61,11 +63,11 @@ function game() {
             resultTitleElement.innerText = `Tie`;
         } else if (getPlayerWinsStatus(player + comp)) {
             resultTitleElement.innerText = `You Lose!`;
-           /* calculateScore(-1);*/
+           
 
         } else {
             resultTitleElement.innerText = `You Win!` ;
-            /*calculateScore(1);*/
+            
         }
     }
     function getPlayerWinsStatus(result) {
@@ -86,6 +88,7 @@ function game() {
 
     function tryAgain() {
         playChoiceElement.classList.remove("hidden");
+        mainScoreArea.classList.remove("hidden"); 
         pickedElement.classList.add("hidden");
     }
 
@@ -98,12 +101,7 @@ function game() {
         currentScore += roundResult;
         updateScoreBoard();
     }
-    function retrieveScoreFromLocalStorage() {
-        const score = + window.localStorage.getItem("gameScore") || 0;
-        currentScore = score;
-        updateScoreBoard();
-
-    }
+   
     function updateScoreBoard() {
         scoreCountElement.innerText = currentScore;
         window.localStorage.setItem("gameScore", currentScore);
