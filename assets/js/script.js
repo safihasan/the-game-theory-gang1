@@ -1,3 +1,5 @@
+
+
 function game() {
     const actions = ["rock", "paper", "scissors", "lizard", "spock"];
     const playerWinResults = ["scissorspaper", 'paperrock', 'rocklizard', 'lizardspock', 'spockscissors',
@@ -10,17 +12,18 @@ function game() {
     const pcPickElement = document.querySelector(".pc-picked");
     const resultElement = document.querySelector(".result");
     const resultTitleElement = resultElement.querySelector(".title");
-    const scoreCountElement = document.querySelector(".score-box");
+    
     let currentScore = null;
 
     window.addEventListener('load', () => {
        /* retrieveScoreFromLocalStorage();*/
+
         document.querySelectorAll(".player-choice .btn-hand").forEach(hand => {
+
             hand.addEventListener("click", (e) => {
                 playerChoice = getPlayerChoice(e.target);
                 compChoice = getCompChoice();
-                console.log(playerChoice);
-                console.log(compChoice);
+                console.log();
 
                 startGame();
             })
@@ -39,9 +42,11 @@ function game() {
         clearResultBeforeAppend();
         buildChoiceElement(true, playerChoice);
         buildChoiceElement(false, compChoice);
+
     }
 
     function getPlayerChoice(target) {
+
         if (target.nodeName === 'IMG') {
             return target.parentElement.classList[1];
         }
@@ -90,7 +95,6 @@ function game() {
     }
 
     /*function calculateScore(roundResult) {
-
         currentScore += roundResult;
         updateScoreBoard();
     }
@@ -107,5 +111,4 @@ function game() {
 
 }
 
-game();
-
+game()
