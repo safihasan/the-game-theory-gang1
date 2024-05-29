@@ -9,7 +9,7 @@
 }
 
 body {
-    height: 100vh;
+    
     background-color: #d7e0e2;
     background-size: cover;
     overflow-x: hidden;
@@ -21,26 +21,95 @@ h1 {
 
     font-family: "Poetsen One", sans-serif;
     color: #F2BB05;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
     padding-top: 20px;
 }
 
+#player-info{
+    display: inline-block;
+    float:left;
+    border:0;
+}
+#computer-info{
+    display: inline-block;
+    float:right;
+    right: 0;
+    border:0;
+}
+span{
+
+font-size: 30px;
+font-weight:600;
+
+}
+#player-score,
+#computer-score{
+    font-size:40px;
+    font-weight:700;
+    text-align: center;
+}
 img {
 height: 100px;
 width: 100px;
-
+border: 2px solid #ffc107;
 
 }
+.btn-hand{
+    margin-left: 80px;
+    margin-bottom: 50px;
+    
+}
 
-
+.hands{
+    margin-top: 100px;
+}
+.btn-rules-container{
+    position: relative;
+}
 .btn-rules{
 background-color:#F2BB05 ;
-font-size: 30px ;
+font-size: 30px;
 border-radius: 15px;
 cursor: pointer;
+position:absolute;
+bottom:0;
 
 }
+.btn-hand:hover {
+    background-color: rgb(27, 159, 236);
+    border: 10px;
+    
+}
+.rule-pic{
+    height:100%;
+    width: 100%;
+}
+.player-choice {
+   text-align: center;
+}
 .hidden{
-    display: ;
+    display:none ;
+}
+
+.play-again{
+    background-color:#F2BB05 ;
+font-size: 40px;
+border-radius: 15px;
+cursor: pointer;
+border-color: black;
+
+}
+.play-again-button{
+    text-align: center;
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
 }

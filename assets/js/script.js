@@ -1,4 +1,3 @@
-
 function game() {
     const actions = ["rock", "paper", "scissors", "lizard", "spock"];
     const playerWinResults = ["scissorspaper", 'paperrock', 'rocklizard', 'lizardspock', 'spockscissors',
@@ -12,14 +11,11 @@ function game() {
     const resultElement = document.querySelector(".result");
     const resultTitleElement = resultElement.querySelector(".title");
     const scoreCountElement = document.querySelector(".score-box");
-    
     let currentScore = null;
 
     window.addEventListener('load', () => {
-        retrieveScoreFromLocalStorage();
-
+       /* retrieveScoreFromLocalStorage();*/
         document.querySelectorAll(".player-choice .btn-hand").forEach(hand => {
-
             hand.addEventListener("click", (e) => {
                 playerChoice = getPlayerChoice(e.target);
                 compChoice = getCompChoice();
@@ -32,7 +28,7 @@ function game() {
         resultElement.querySelector("button").addEventListener('click', tryAgain);
 
         document.getElementById("playSoundButton").addEventListener("click", function () {
-            var audio = new Audio("assets/sound/rock-paper-scissors-lizard-spock-game-rules-rock-paper-scissors-lizard-spock-sheldon-big-bang-theory-101soundboards.mp3");
+            var audio = new Audio("assets/sounds/rock-paper-scissors-lizard-spock-game-rules-rock-paper-scissors-lizard-spock-sheldon-big-bang-theory-101soundboards.mp3");
             audio.play();
         });
     })
@@ -46,8 +42,7 @@ function game() {
     }
 
     function getPlayerChoice(target) {
-
-        if (target.nodeName === 'I') {
+        if (target.nodeName === 'IMG') {
             return target.parentElement.classList[1];
         }
         return target.classList[1];
@@ -60,12 +55,12 @@ function game() {
         if (player === comp) {
             resultTitleElement.innerText = `Tie`;
         } else if (getPlayerWinsStatus(player + comp)) {
-            resultTitleElement.innerText = `You Win!`;
-            calculateScore(1);
+            resultTitleElement.innerText = `You Lose!`;
+           /* calculateScore(-1);*/
 
         } else {
-            resultTitleElement.innerText = `You Lose!`;
-            calculateScore(-1);
+            resultTitleElement.innerText = `You Win!` ;
+            /*calculateScore(1);*/
         }
     }
     function getPlayerWinsStatus(result) {
@@ -74,7 +69,8 @@ function game() {
 
     function buildChoiceElement(isItUserElement, className) {
         const el = document.createElement("button");
-        el.innerHTML = `<i class="fa-solid fa-hand-${className}"></i></button>`;
+        el.innerHTML = `<img src="assets/gallery/${className}.jpeg"
+        alt="rock hand">`;
         el.classList = [`btn-hand ${className}`];
         if (isItUserElement) {
             playerPickElement.append(el);
@@ -93,7 +89,8 @@ function game() {
         pcPickElement.innerHTML = "";
     }
 
-    function calculateScore(roundResult) {
+    /*function calculateScore(roundResult) {
+
         currentScore += roundResult;
         updateScoreBoard();
     }
@@ -106,8 +103,9 @@ function game() {
     function updateScoreBoard() {
         scoreCountElement.innerText = currentScore;
         window.localStorage.setItem("gameScore", currentScore);
-    }
+    }*/
 
 }
 
 game();
+
