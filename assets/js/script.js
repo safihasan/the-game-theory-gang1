@@ -106,17 +106,6 @@ function game() {
         playerPickElement.innerHTML = "";
         pcPickElement.innerHTML = "";
     }
-
-    /*function calculateScore(roundResult) {
-        currentScore += roundResult;
-        updateScoreBoard();
-    }
-   
-    function updateScoreBoard() {
-        scoreCountElement.innerText = currentScore;
-        window.localStorage.setItem("gameScore", currentScore);
-    }*/
-
 }
 
 game()
