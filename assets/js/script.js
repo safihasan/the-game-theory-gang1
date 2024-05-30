@@ -62,23 +62,26 @@ function game() {
     }
 
     function calculateWinner(player, comp) {
+        console.log(player + comp)
         if (player === comp) {
             resultTitleElement.innerText = `Tie`;
         } else if (getPlayerWinsStatus(player + comp)) {
-            resultTitleElement.innerText = `You Lose!`;
+            
+            resultTitleElement.innerText = `You WIN!`;
+            playerScore++;
+            PlayerScoreDisplay.textContent = playerScore;
            
            computerScore++;
            computerScoreDisplay.textContent = computerScore;
         } else {
-            resultTitleElement.innerText = `You Win!` ;
+            resultTitleElement.innerText = `You Lose!` ;
             
-            playerScore++;
-            PlayerScoreDisplay.textContent = playerScore;
+           
         }
     }
 
     function getPlayerWinsStatus(result) {
-        return playerWinResults.some(winStr => winStr === result); l
+        return playerWinResults.some(winStr => winStr === result); 
     }
 
     function buildChoiceElement(isItUserElement, className) {
