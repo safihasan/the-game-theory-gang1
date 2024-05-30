@@ -255,12 +255,19 @@ The application was evaluated for speed, loading times, accessibility, and searc
 ![](/assets/performance%20tests/best_practices.PNG)
 
 - Browser compatibility:
+ Tested and confirmed capabilities on:
+
+ * Microsoft Edge
+ * Google Chrome
+ * Safari
+ * Internet Explorer
 
 - Responisveness:
 
 # Bugs
 The bugs encountered while making this game, included.
 *html positioning for UX.
+*Bug detected in winner results and resolved
 
 
 # Deployment
