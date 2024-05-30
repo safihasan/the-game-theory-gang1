@@ -237,11 +237,22 @@ After each round, the player is presented with a "Play Again" button, allowing t
 
 # Testing
 
-- Validation:
+## Validation:
 https://validator.w3.org/  - One warning only, for missing heading.
 https://jigsaw.w3.org/css-validator/   -Congratulations, no errors found.
 
-- Performance testing:
+## Performance testing
+The application was evaluated for speed, loading times, accessibility, and search engine optimization using Google Chrome Lighthouse. The results showed that the game application performed well overall, though there are areas for potential improvement. For instance, enhancing accessibility can be achieved by increasing the contrast between the foreground and background. Additionally, search engine optimization can be improved by including a meta description in the document.
+
+![](/assets/performance%20tests/Lighthouse_test.PNG)
+
+![](/assets/performance%20tests/page_loading_times.PNG)
+
+![](/assets/performance%20tests/Accesibility.PNG)
+
+![](/assets/performance%20tests/Search_engine_optimisation.PNG)
+
+![](/assets/performance%20tests/best_practices.PNG)
 
 - Browser compatibility:
 
@@ -256,8 +267,12 @@ The bugs encountered while making this game, included.
 The site was deployed to GitHub pages on 28th May 2024. The steps to deploy are as follows: In the GitHub repository, navigate to the Settings tab From the source section drop-down menu, select the Master Branch Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. The live link can be found here https://safihasan.github.io/the-game-theory-gang1/
 
 # Credits
-https://github.com/Juanma1313/spock-game/blob/main/README.md#credits
+<a href="https://github.com/Juanma1313/spock-game/blob/main/README.md#credits">README template</a>
 
-https://www.youtube.com/results?search_query=rock+paper+scissors+spok+lizardgame+css+html+javascript+with+2+player+scores+
+<a href="https://www.youtube.com/results?search_query=rock+paper+scissors+spok+lizardgame+css+html+javascript+with+2+player+scores+">Online Javascript Tutorials</a>
 
-https://www.w3schools.com/#gsc.tab=0&gsc.q=add%20sound%20
+<a href="https://www.w3schools.com/#gsc.tab=0&gsc.q=add%20sound%20"> W3schools</a>
+
+<a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/"> Bootstrap </a>
+
+<a href="https://icon-library.com/icon/rock-paper-scissors-icon-5.html#google_vignette"> Free icon </a>
