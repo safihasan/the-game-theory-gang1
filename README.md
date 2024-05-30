@@ -244,12 +244,19 @@ https://jigsaw.w3.org/css-validator/   -Congratulations, no errors found.
 - Performance testing:
 
 - Browser compatibility:
+ Tested and confirmed capabilities on:
+
+ * Microsoft Edge
+ * Google Chrome
+ * Safari
+ * Internet Explorer
 
 - Responisveness:
 
 # Bugs
 The bugs encountered while making this game, included.
 *html positioning for UX.
+*Bug detected in winner results and resolved
 
 
 # Deployment
