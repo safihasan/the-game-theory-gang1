@@ -71,11 +71,11 @@ function game() {
             playerScore++;
             PlayerScoreDisplay.textContent = playerScore;
            
-           computerScore++;
-           computerScoreDisplay.textContent = computerScore;
+           
         } else {
             resultTitleElement.innerText = `You Lose!` ;
-            
+            computerScore++;
+            computerScoreDisplay.textContent = computerScore;
            
         }
     }
