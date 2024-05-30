@@ -276,4 +276,4 @@ The site was deployed to GitHub pages on 28th May 2024. The steps to deploy are 
 
 <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/"> Bootstrap </a>
 
-<a href="https://icon-library.com/icon/rock-paper-scissors-icon-5.html#google_vignette"> Free icon </a>
+<a href="https://icon-library.com/icon/rock-paper-scissors-icon-5.html#google_vignette"> Free icons library </a>
