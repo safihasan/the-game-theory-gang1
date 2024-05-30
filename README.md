@@ -254,20 +254,14 @@ The application was evaluated for speed, loading times, accessibility, and searc
 
 ![](/assets/performance%20tests/best_practices.PNG)
 
-- Browser compatibility:
- Tested and confirmed capabilities on:
+- Browser Compatibility Testing: Ensured compatibility with Chrome, Opera, Microsoft Edge, and Firefox desktop browsers.
 
- * Microsoft Edge
- * Google Chrome
- * Safari
- * Internet Explorer
-
-- Responisveness:
+- Responsiveness Testing: Utilized Chrome Developer Tools to verify responsiveness across multiple devices: Desktop, Laptop, Moto G4, Galaxy S5, iPhone 5/SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPad, iPad Pro, Galaxy Fold.
 
 # Bugs
 The bugs encountered while making this game, included.
 *html positioning for UX.
-*Bug detected in winner results and resolved
+*Bug detected in winner results and resolved.
 
 
 # Deployment
